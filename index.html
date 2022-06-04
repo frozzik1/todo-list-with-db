@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            Todo list
+        </header>
+        <div class="new-todo">
+            <div class="new-todo-input">
+                <!-- <form onsubmit="addItem(event)"> -->
+                <form id="addItemButton">
+                    <input id="todo-input" type="text" placeholder="Create a new todo..." />
+                    <button class="todo-button" type="submit">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+                    <div class="select">
+                        <select name="todos" class="filter-todo" id="selectToDo">
+                            <option value="all" selected>All</option>
+                            <option value="completed">Completed</option>
+                            <option value="active">Uncompleted</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="todo-items-wrapper">
+            <div class="todo-items">
+                <!-- <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark checked">
+                            <img src="assets/icon-check.svg">
+                        </div>
+                    </div>
+                    <div class="todo-text checked">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./firebase-app.js"></script>
+    <script src="./firebase-firestore.js"></script>
+    <!-- <script src="./firebase-analytics.js"></script> -->
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
